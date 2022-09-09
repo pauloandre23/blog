@@ -100,6 +100,9 @@ align-self: flex-start;
 }
 
 
+&:last-child {
+  align-self: flex-end;
+}
 
 > div {
   margin: 0.2rem 0;
