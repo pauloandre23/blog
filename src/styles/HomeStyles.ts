@@ -10,5 +10,6 @@ export const HomeContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 8rem;
+    margin-bottom: 5rem;
   }
 `
