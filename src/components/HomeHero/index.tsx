@@ -1,5 +1,4 @@
 import picture from '../../assets/chama.jpg';
-import github from '../../assets/mark-github.svg';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { Container, TextContainer, InfoContainer, CodeItem } from './styles';
 
