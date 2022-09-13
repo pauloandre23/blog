@@ -1,16 +1,17 @@
-import { Header } from "../components/Header";
-import { HomeHero } from "../components/HomeHero";
-import { HomeContainer } from "../styles/HomeStyles";
+import { Experience } from '../components/Experience';
+import { Header } from '../components/Header';
+import { HomeHero } from '../components/HomeHero';
+import { HomeContainer } from '../styles/HomeStyles';
 
 export default function Home() {
   return (
+    <HomeContainer>
+      <Header />
 
-   <HomeContainer>
-    <Header />
-
-    <main className="container">
-      <HomeHero />
-    </main>
-   </HomeContainer>
+      <main className="container">
+        <HomeHero />
+        <Experience />
+      </main>
+    </HomeContainer>
   );
 }

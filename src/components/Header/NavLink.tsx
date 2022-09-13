@@ -1,5 +1,5 @@
-import {NavLinkContainer} from './styles';
-import Link from 'next/link'
+import { NavLinkContainer } from './styles';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 interface Props {
@@ -7,17 +7,16 @@ interface Props {
   path: string;
 }
 
-export default function NavLink({ title, path }: Props ) {
-
+export default function NavLink({ title, path }: Props) {
   const router = useRouter();
 
-  const isActive = router.pathname === path
-
+  const isActive = router.pathname === path;
+  console.log(" ##### router   ", router.pathname)
   return (
     <NavLinkContainer isActive={isActive}>
       <Link href={path}>
-      <a>{title}</a>
+        <a>{title}</a>
       </Link>
     </NavLinkContainer>
-  )
+  );
 }
